@@ -1,0 +1,55 @@
+{
+  
+   "Groups":[
+   {
+    "Group" : "Data manipulation in python", 
+    "Items": [
+    {
+        "Name": "Tom Augspurger",
+        "Links": ["https://tomaugspurger.github.io", "https://www.youtube.com/watch?v=7vuO9QXDN50"],
+        "Description": "Pandas Head to tail & blog "
+    },
+    {
+        "Name": "Numba",
+        "Links": "https://numba.pydata.org",
+        "Description": "Support compilation of Python on run on CPU/GPU"
+    },
+    {
+        "Name": "Natural Language Processing Google Cloud",
+        "Links": ["https://googlecloudplatform.github.io/google-cloud-python/latest/language/usage.html"],
+        "Description": "Google Natural Language API and other Google Cloud Client Libraries in python"
+    },
+    {
+        "Name": "Logistic Regression/TFIDF Kaggle.",
+        "Links": ["https://www.kaggle.com/sudhirnl7/logistic-regression-tfidf/notebook"],
+        "Description": "Kaggle classification challenge"
+    }
+    ]},
+    {
+    "Group" : "Machine Learning", 
+    "Items": [
+     {
+         "Name": "Pytorch",
+         "Links": ["https://pytorch.org"],
+         "Description": "Deep learning framework- Tensor computation and DNNs"
+     },
+     {
+         "Name": "Deep Learning Guide",
+         "Links": "http://www.deeplearningbook.org",
+         "Description": "Deep learning intro"
+     }]},
+     {
+        "Group" : "Other", 
+        "Items": [
+         {
+             "Name": "Crypto- Truffle Framework",
+             "Links": ["https://truffleframework.com/"],
+             "Description": "Development framework for Ethereum"
+         },
+         {
+             "Name": "Flink DataStream API",
+             "Links": "http://training.data-artisans.com/dataStream/basics.html",
+             "Description": "Guide to the flink datasteam api"
+         }]}
+    ]
+}
