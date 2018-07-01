@@ -1,0 +1,7 @@
+# Dependency directories
+node_modules
+
+# Will check this in at a later date
+package-lock.json
+
+.history
