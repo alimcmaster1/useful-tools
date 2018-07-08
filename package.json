@@ -12,7 +12,13 @@
     "open:src": "babel-node build-scripts/srcServer.js",
     "lint": "esw webpack.config.* src build-scripts",
     "lint:watch": "npm run lint -- --watch",
-    "localtunnel": "lt --port 3000 --subdomain alistair"
+    "localtunnel": "lt --port 3000 --subdomain alistair",
+    "generate-mock-data": "babel-node build-scripts/testing/generateMockData",
+    "clean-dist": "rimraf ./dist && mkdir dist",
+    "prebuild": "npm-run-all clean-dist test lint",
+    "build": "babel-node build-scripts/build.js",
+    "postbuild": "babel-node build-scripts/distServer.js"
+
   },
   "repository": {
     "type": "git",

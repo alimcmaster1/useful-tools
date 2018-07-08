@@ -11,7 +11,7 @@
     },
     {
         "Name": "Numba",
-        "Links": "https://numba.pydata.org",
+        "Links": ["https://numba.pydata.org"],
         "Description": "Support compilation of Python on run on CPU/GPU"
     },
     {
@@ -35,7 +35,7 @@
      },
      {
          "Name": "Deep Learning Guide",
-         "Links": "http://www.deeplearningbook.org",
+         "Links": ["http://www.deeplearningbook.org"],
          "Description": "Deep learning intro"
      }]},
      {
@@ -48,8 +48,16 @@
          },
          {
              "Name": "Flink DataStream API",
-             "Links": "http://training.data-artisans.com/dataStream/basics.html",
+             "Links": ["http://training.data-artisans.com/dataStream/basics.html"],
              "Description": "Guide to the flink datasteam api"
-         }]}
+         },
+         {
+            "Name": "Rest API Auth",
+            "Links": ["https://vertx.io/blog/writing-secure-vert-x-web-apps/"],
+            "Description": "Guide to rest API Auth in Vertx"
+        }
+         
+         
+         ]}
     ]
 }
