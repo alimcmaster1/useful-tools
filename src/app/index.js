@@ -12,9 +12,11 @@ getFavouritePages().then(result => {
        tabBody += `<tbody>` 
        group.Items.forEach(item =>{
             tabBody +=
-            `<tr><td>${item.Name}</td>
-             <td><a class="external" href="${item.Links}">${item.Links}</a></td>
-             <td>${item.Description}</td></tr>`
+            `<tr><td>${item.Name}</td><td>`
+              item.Links.forEach(link => {
+             tabBody += `<a class="external" href="${link}">${link} </a>`
+             })
+             tabBody += `</td><td>${item.Description}</td></tr>`
         })
         tabBody += `<tbody></table>`
         $('.tab.segment').filter(`[data-tab="${group.Group}"]`).html(tabBody)
