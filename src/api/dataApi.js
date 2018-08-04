@@ -1,6 +1,6 @@
 import 'whatwg-fetch'
 
-const url_root = "http://0.0.0.0:8000" // https://peaceful-harbor-60665.herokuapp.com"
+const url_root = "https://peaceful-harbor-60665.herokuapp.com"
 const db_api = url_root + '/db/links'
 
 export function getFavouritePages(){
