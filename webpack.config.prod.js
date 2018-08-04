@@ -51,7 +51,7 @@ export default {
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
-      {test: /\.css$/, loader: ExtractTextPlugin('css?sourceMap')}
+      {test: /\.css$/, loader: ExtractTextPlugin.extract('css?sourceMap')}
     ]
   }
 }

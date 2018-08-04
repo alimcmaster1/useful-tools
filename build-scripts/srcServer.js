@@ -16,7 +16,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 app.get('/', function(_req, res){
     res.sendFile(path.join(__dirname, '../src/app/index.html'))
 })
-app.get('/favourite', function(_req, res){
+app.get('/db/links', function(_req, res){
     res.sendFile(path.join(__dirname, '../src/resources/favourites.json'))
 })
 app.listen(port, function(err){

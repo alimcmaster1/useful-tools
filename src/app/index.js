@@ -1,5 +1,6 @@
 import './index.css'
 import greet from './greet.js'
+import {submitForm, delete_item} from './formActions.js';
 import {getFavouritePages} from '../api/dataApi';
 
 const name = "Alistair"
@@ -12,7 +13,9 @@ getFavouritePages().then(result => {
        tabBody += `<tbody>` 
        group.Items.forEach(item =>{
             tabBody +=
-            `<tr><td>${item.Name}</td><td>`
+            `<tr><td>${item.Name}
+                <i class="trash alternate outline icon usefulitem" style="float:right"></i>
+                </td><td>`
               item.Links.forEach(link => {
              tabBody += `<a class="external" href="${link}">${link} </a>`
              })
@@ -21,7 +24,17 @@ getFavouritePages().then(result => {
         tabBody += `<tbody></table>`
         $('.tab.segment').filter(`[data-tab="${group.Group}"]`).html(tabBody)
     })
+
+    $('.usefulitem').on('click', function(){
+        // fix this and do in a non hack way!
+        let group = this.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute('data-tab')
+        let name = this.parentElement.innerText.trim()
+        delete_item(group, name)
+    })
+
 })
 
 $('.menu .item')
     .tab()
+
+$('.ui.form').form({ onSuccess: submitForm });
