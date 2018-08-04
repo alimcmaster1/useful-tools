@@ -19,7 +19,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.2/dist/semantic.min.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <!-- <script type=module src="bundle.js"></script> -->
 </head>
 <body>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.2/dist/semantic.min.css">
@@ -35,11 +34,36 @@
           <a class="item active" data-tab="Data manipulation in python">Data manipulation in python</a>
           <a class="item" data-tab="Machine Learning">Machine Learning</a>
           <a class="item" data-tab="Other">Other</a>
+          <a class="item right" data-tab="Add Item">
+            <button class="ui button">Add item</button>
+          </a>
       </div>
       <div class="ui bottom attached tab segment active" data-tab="Data manipulation in python"></div>
       <div class="ui bottom attached tab segment" data-tab="Machine Learning"></div>
       <div class="ui bottom attached tab segment" data-tab="Other"></div>
-    </div>
+      <div class="ui bottom attached tab segment" data-tab="Add Item">
+      <form class="ui form">
+          <div class="field">
+            <label>Group Name</label>
+            <input type="text" name="group" placeholder="Group name, eg. Machine Learning">
+          </div>
+          <div class="field">
+              <label>Item Name</label>
+              <input type="text" name="item_name" placeholder="Item name, eg. Tensorflow">
+          </div>
+          <div class="field">
+              <label>Links</label>
+              <input type="text" name="link" placeholder="Handy links">
+          </div>
+          <div class="field">
+              <label>Description</label>
+              <input type="text" name="desc" placeholder="Description">
+          </div>
+          <div class="field">
+            <div class="ui submit button">Submit</div>
+          </div>  
+      </form>
+      </div>
   </div>
   </div>
 </div>

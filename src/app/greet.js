@@ -1,6 +1,6 @@
 export default function greet (){
     const MORNING_END = 12
-    const AFTERNOON_END = 5
+    const AFTERNOON_END = 17
     
     const MORN_GREET = "Good Morning"
     const AFTER_GREET = "Good Afternoon"
