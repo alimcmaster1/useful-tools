@@ -4,7 +4,6 @@ const url_root = "https://peaceful-harbor-60665.herokuapp.com"
 const db_api = url_root + '/db/links'
 
 export function getFavouritePages(){
-    debugger;
     return build_request(db_api, "GET")
 }
 

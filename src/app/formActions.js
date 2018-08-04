@@ -1,7 +1,6 @@
 import {addFavouritePage, deleteFavouritePage} from '../api/dataApi';
 
 export function submitForm(){
-    debugger;
     addFavouritePage(getFieldValue('group'),
                      getFieldValue('item_name'),
                      [getFieldValue('link')],
